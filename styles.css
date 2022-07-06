@@ -29,7 +29,7 @@ nav ul{
      background-color: black;
      color: aliceblue;
      fill: aqua;
-     width: 1000%;
+/*      width: 1000%; */
      /* justify-content: space-between; */
      /* justify-content: space-around; */
 }
@@ -127,8 +127,6 @@ nav ul li{
 }
 .songInfo{
      color: white;
-     position: absolute;
-     left: 10vw;
 }
 .songInfo img{
      opacity: 0;
