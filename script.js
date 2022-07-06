@@ -20,6 +20,7 @@ let songs=[
      {songName: "me", filePath:"songs/6.mp3", coverPath: "covers/c6.jpeg"},
      {songName: "enchanted", filePath:"songs/7.mp3", coverPath: "covers/c7.jpeg"},
      {songName: "ready for it", filePath:"songs/8.mp3", coverPath: "covers/c8.jpeg"},
+     {songName: "willow", filePath:"songs/9.mp3", coverPath: "covers/c9.jpeg"},
      
 ]
 
@@ -88,7 +89,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
 
 document.getElementById('next').addEventListener('click',()=>{
      // songIndex=parseInt(e.target.id);
-     if(songIndex>7)
+     if(songIndex>8)
           songIndex=1;
      else
           songIndex++;
@@ -106,7 +107,7 @@ document.getElementById('previous').addEventListener('click',()=>{
      if(songIndex>1)
           songIndex--;
      else
-          songIndex=8;
+          songIndex=9;
 
           audioElement.src=`songs/${songIndex}.mp3`;
           audioElement.currentTime=0;
